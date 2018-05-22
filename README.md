@@ -17,6 +17,12 @@ I have made few assumption to keep the implementation a simple Restful API. Here
 
 The implementaion is done using Spring Boot framework, as Spring Boot provide a built in server to run the application. Below is a list of REST api provided by application.
 
-## Add an Offer
+## Create an Offer
+URL: http://localhost:8080/offers
+HTTP Method: POST
+Example Request:
 
-Add an offer is provided using the Http POST method. Where merchant can post
+{
+  ""
+}
+Create an offer is implemented using the Http POST method.
