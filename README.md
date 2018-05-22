@@ -11,7 +11,7 @@ I have made few assumption to keep the implementation a simple Restful API. Here
 1. The storage used for this example is a in memory Hashmap to store the offers against the offerId as key.
 2. The offer object defined has the minimum required property and it is assumed that the offer will be valid from the time it is created until expires.
 3. Merchant would provide the endDate for the offer, and not the duration from the time it is created. As it is easier to manage the time until the offer is valid by providing the endDate than the duration from the time offer become Live.
-4. No validation is added to the offer provided to keep the exercise restricted to simple RESTful exercise.
+4. No validation is added to the offer object to keep the exercise restricted to simple RESTful exercise.
 
 # Implementation
 
