@@ -20,8 +20,12 @@ The implementaion is done using Spring Boot framework, as Spring Boot provide a 
 The application can be started using command below : 
 ```
 ./mvnw spring-boot:run
+
+or 
+
+./mvnw.cmd spring-boot:run
 ```
-You should have maven and java8 installed and corresponding MVN_HOME and JAVA_HOME environment set to run this command. Once run application will start and will listen on port 8080. 
+You should have maven and java8 installed and corresponding M2_HOME and JAVA_HOME environment set to run this command. Once run application will start and will listen on port 8080. 
 
 Postman can be used to run the manual tests.
 
