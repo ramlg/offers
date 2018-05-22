@@ -17,6 +17,15 @@ I have made few assumption to keep the implementation a simple Restful API. Here
 
 The implementaion is done using Spring Boot framework, as Spring Boot provide a built in server to run the application. Below is a list of REST api provided by application.
 
+The application can be started using command below : 
+```
+./mvnw spring-boot:run
+```
+You should have maven and java8 installed and corresponding MVN_HOME and JAVA_HOME environment set to run this command. Once run application will start and will listen on port 8080. 
+
+Postman can be used to run the manual tests.
+
+
 ## Create an Offer
 URL: http://localhost:8080/offers
 
@@ -46,8 +55,8 @@ HTTP Method: GET
 
 ### Example Request:
 ```
-POST /offers HTTP/1.1
-Host: localhost:8080/offers/5e1a48f9-64ae-4d76-bda1-3b70b74d6cd8
+GET /offers/5e1a48f9-64ae-4d76-bda1-3b70b74d6cd8 HTTP/1.1
+Host: localhost:8080
 ```
 ### Response:
 
@@ -71,8 +80,8 @@ HTTP Method: GET
 
 ### Example Request:
 ```
-POST /offers HTTP/1.1
-Host: localhost:8080/offers
+GET /offers HTTP/1.1
+Host: localhost:8080
 ```
 ### Response:
 
@@ -106,7 +115,7 @@ Host: localhost:8080/offers
 ]
 ```
 
-## Get All Offers
+## Cancel an Offer
 URL: http://localhost:8080/offers/{offerId}
 HTTP Method: PATCH
 
@@ -114,8 +123,8 @@ To cancel an offer a HTTP PATCH method is chosen, as PUT method is to update or 
 
 ### Example Request:
 ```
-PATCH /offers/ HTTP/1.1
-Host: localhost:8080/offers/392c6a85-98d4-46bb-b62b-149107713a60
+PATCH /offers/392c6a85-98d4-46bb-b62b-149107713a60 HTTP/1.1
+Host: localhost:8080
 Content-Type: application/json
 {
 	"command" : "cancel"
