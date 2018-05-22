@@ -19,10 +19,12 @@ The implementaion is done using Spring Boot framework, as Spring Boot provide a 
 
 The application can be started using command below : 
 ```
+On Unix/MacOs Platforms
 ./mvnw spring-boot:run
 
 or 
 
+On Windows: 
 ./mvnw.cmd spring-boot:run
 ```
 You should have maven and java8 installed and corresponding M2_HOME and JAVA_HOME environment set to run this command. Once run application will start and will listen on port 8080. 
